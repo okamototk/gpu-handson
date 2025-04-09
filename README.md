@@ -22,6 +22,10 @@
 ## 補足解説
 インストール上の構成や注意などの補足解説。
 
+### Kubernetesに関わるアーキテクチャ
+
+![](gpu-handson.png)
+
 ### macOS
 * MacのネイティブGPU APIはMetal APIなので、MoltenVKでホスト側でVulkan APIに変換する。
 * コンテナが動作するVM上では、/dev/driとしてGPUデバイスが公開される
