@@ -15,6 +15,8 @@
     * WSL2
     * WSL CUDA Driver: https://developer.nvidia.com/cuda/wsl
     上記をインストールした上でk8s, [NVIDIA Device Driver](https://github.com/NVIDIA/k8s-device-plugin)プラグインなどを利用すると動作する可能性があります。
+
+  * 詳細は[NVIDIA Linuxの環境構築手順](docs/nvidia-linux.md)を参照
 4. Linux + GeForce
   * Ollamaは普通に使うことができます。
   * k8sで利用する場合、NVIDIA Driver、NVIDIA Container Runtimeを手動でインストールしてGPU Operatorをインストールすれば、動作するかもしれません。
