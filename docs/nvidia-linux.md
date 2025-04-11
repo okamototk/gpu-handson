@@ -1,4 +1,4 @@
-# NVIDIA GPU + Linux11でKubernetesでGPUを利用する方法
+# NVIDIA GPU + LinuxでKubernetesでGPUを利用する方法
 
 基本的にNVIDIAのエンタープライズのGPU(A100,H100,H200,GBXXX)は、GPU OperatorがドライバのインストールからDevice Pluginのインストールまで必要な処理はすべてやってくれます。
 GPU Operatorは基本的にGeForceなどのコンシューマ向けのGPUに対応していませんが、手動でセットアップすることにより1Kubernetesから利用することができます。
