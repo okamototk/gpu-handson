@@ -10,16 +10,16 @@
   * 下記のドキュメントを参考に、ipex-llm版のOllamaをご利用ください。
     * [Run Ollama with IPEX-LLM on Intel GPU](https://github.com/intel/ipex-llm/blob/main/docs/mddocs/Quickstart/ollama_quickstart.md)
 3. Windows + GeForce
-  * Ollamaは普通に使うことができます。1
+  * Ollamaは普通に使うことができます。
   * k8sで利用する場合は、下記の環境が必要となります。
     * WSL2
     * WSL CUDA Driver: https://developer.nvidia.com/cuda/wsl
-    上記をインストールした上でk8s, [NVIDIA Device Driver](https://github.com/NVIDIA/k8s-device-plugin)プラグインなどを利用すると動作する可能性があります。
-
-  * 詳細は[NVIDIA Linuxの環境構築手順](docs/nvidia-linux.md)を参照
+  * 上記をインストールした上でk8s, [NVIDIA Device Driver](https://github.com/NVIDIA/k8s-device-plugin)プラグインなどを利用すると動作する可能性があります。
+  * 精査はできていませんが[NVIDIA Linuxの環境構築手順](docs/nvidia-linux.md)を参考にしてください。
 4. Linux + GeForce
   * Ollamaは普通に使うことができます。
   * k8sで利用する場合、NVIDIA Driver、NVIDIA Container Runtimeを手動でインストールしてGPU Operatorをインストールすれば、動作するかもしれません。
+  * 精査はできていませんが[NVIDIA Linuxの環境構築手順](docs/nvidia-linux.md)を参考にしてください。
 
 ## 補足解説
 インストール上の構成や注意などの補足解説。
