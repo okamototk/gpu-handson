@@ -1,7 +1,7 @@
 # NVIDIA GPU + LinuxでKubernetesでGPUを利用する方法
 
 基本的にNVIDIAのエンタープライズのGPU(A100,H100,H200,GBXXX)は、GPU OperatorがドライバのインストールからDevice Pluginのインストールまで必要な処理はすべてやってくれます。
-GPU Operatorは基本的にGeForceなどのコンシューマ向けのGPUに対応していませんが、手動でセットアップすることにより1Kubernetesから利用することができます。
+GPU Operatorは基本的にGeForceなどのコンシューマ向けのGPUに対応していませんが、手動でセットアップすることによりKubernetesから利用することができます。
 ここでは、手動でGPU Operatorを利用してセットアップを行い、GeForceなどGPU OperatorがサポートしていないGPUでKubernetesを利用する手順を紹介します。
 
 ## 事前準備
@@ -43,7 +43,7 @@ $ sudo modprobe nvidia
 
 
 ### 2. NVIDIA Container Toolkitのインストール
-ここの手順に従う
+ここの手順に従う。恐らくスキップしても動作する。
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
@@ -97,7 +97,7 @@ helm repo add nvidia https://helm.ngc.nvidia.com/nvidia  # Use the OSS-compatibl
 helm repo update
 ```
 
-#### PSAが有効な場合下記のてじゅんでインストール
+#### PSAが有効な場合下記の手順でインストール
 ```
 kubectl label --overwrite ns gpu-operator pod-security.kubernetes.io/enforce=privileged 
 helm install --wait --generate-name \
@@ -186,5 +186,5 @@ nvidia-smi
 ```
 
 ### GeForceの制限事項
-＊ MIGによるGPUの論理分割は利用できない。1
+* MIGによるGPUの論理分割は利用できない。
 * DCや商用として利用するのは禁止されている。非商用の目的のために利用すること。
