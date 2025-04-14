@@ -2,7 +2,7 @@
 
 このドキュメントはGPUハンズオン・ハッカソンのための資料です。
 
-1. Mac(Apple Silliconで参加)
+1. Mac(Apple Siliconで参加)
   * k8sでGPUを利用することができます。下記のURLをご覧になり進めてください。
   * https://github.com/okamototk/k8s-mac
 2. Windows Intel Core i7 11thより新しいプロセッサ
